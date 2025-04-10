@@ -375,6 +375,7 @@
   #es-rc #es-rc-content .es-change__list {
     max-width: 90%;
     margin: 0 auto;
+    align-items: normal;
   }
   #es-rc #es-rc-content .es-change__single-icon {
     max-width: 70px;
