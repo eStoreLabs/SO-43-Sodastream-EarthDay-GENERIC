@@ -119,15 +119,23 @@
   text-align: center;
 }
 #es-rc #es-rc-content .es-cross__container {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   gap: 30px;
   width: 90%;
 }
 #es-rc #es-rc-content .es-cross__single {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: start;
   justify-content: flex-start;
   max-width: 100%;
   margin: 0 auto;
@@ -136,6 +144,7 @@
   border-radius: 72px;
   box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
+  height: 538px;
   border-radius: 40px;
 }
 #es-rc #es-rc-content .es-cross__single-image {
@@ -178,9 +187,10 @@
   color: #ffffff;
   border-radius: 80px;
   text-decoration: none;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 #es-rc #es-rc-content .es-cross__single-link:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 #es-rc #es-rc-content .es-cross__single-subtitle-disclaimer {
@@ -229,13 +239,20 @@
   text-align: center;
 }
 #es-rc #es-rc-content .es-change__list {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  align-items: center;
+  padding-inline: 10px;
   gap: 32px;
 }
 #es-rc #es-rc-content .es-change__single {
+  display: -webkit-box;
   display: flex;
   max-width: 99%;
+  -webkit-box-align: start;
   align-items: flex-start;
   justify-content: space-around;
   padding: 30px;
@@ -248,9 +265,12 @@
   max-width: 125px;
 }
 #es-rc #es-rc-content .es-change__single-group {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   gap: 18px;
+  -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
   column-gap: 10px;
 }
@@ -262,8 +282,12 @@
   min-width: 35%;
 }
 #es-rc #es-rc-content .es-change__single-inner-2 {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-align: start;
   align-items: flex-start;
   gap: 5px;
 }
@@ -406,22 +430,32 @@
     background-size: cover;
     min-height: 330px;
     margin-bottom: 0;
+    display: -webkit-box;
     display: flex;
   }
   #es-rc #es-rc-content .es-features__title {
     text-align: left;
   }
   #es-rc #es-rc-content .es-features__inner {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
     align-items: flex-start;
     max-width: 60%;
     padding-left: 100px;
   }
   #es-rc #es-rc-content .es-features__wrapper {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-align: start;
     align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     gap: 20px;
   }
@@ -429,6 +463,7 @@
     font-family: "HurmeGeometricSans3-Regular", sans-serif;
     font-weight: 500;
     position: static;
+    -webkit-box-ordinal-group: 3;
     order: 2;
     margin-left: -10px;
     color: #13294b;
@@ -449,6 +484,7 @@
   #es-rc #es-rc-content .es-cross__single {
     background: #e5dcd3;
     min-height: auto;
+    height: auto;
     padding-bottom: 20px;
   }
   #es-rc #es-rc-content .es-cross__single-subtitle-disclaimer {
@@ -477,8 +513,12 @@
   }
   #es-rc #es-rc-content .es-change__list {
     max-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     flex-direction: row;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
   }
   #es-rc #es-rc-content .es-change__disclaimer--mobile {
@@ -490,8 +530,12 @@
     display: block;
   }
   #es-rc #es-rc-content .es-change__single {
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-pack: center;
     justify-content: center;
     padding-right: 15px;
     padding-left: 15px;
@@ -505,6 +549,8 @@
     max-width: 100%;
   }
   #es-rc #es-rc-content .es-change__single-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
   #es-rc #es-rc-content .es-change__single-title {
@@ -532,6 +578,7 @@
     max-width: none;
   }
   #es-rc #es-rc-content .es-change__single-inner-2 {
+    -webkit-box-align: center;
     align-items: center;
   }
   #es-rc #es-rc-content .es-video {
@@ -577,9 +624,14 @@
     width: 100%;
   }
   #es-rc #es-rc-content .es-change__inner {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     flex-direction: row;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
   }
   #es-rc #es-rc-content .es-change__list {
@@ -731,56 +783,141 @@
     font-size: 18px;
   }
 }
-@keyframes pulse {
+
+@-webkit-keyframes pulse {
   0% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
   60% {
+    -webkit-transform: scale(1.4);
     transform: scale(1.4);
   }
   100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
 @keyframes pulse2 {
   0% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
   60% {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
   100% {
+    -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+@-webkit-keyframes slidedown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-32px);
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @keyframes slidedown {
   from {
     opacity: 0;
+    -webkit-transform: translateY(-32px);
     transform: translateY(-32px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideright {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 @keyframes slideright {
   from {
     opacity: 0.3;
+    -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideleft {
+  from {
+    opacity: 0.3;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
 @keyframes slideleft {
   from {
     opacity: 0.3;
+    -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+@-webkit-keyframes load1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
   }
 }
 @keyframes load1 {
@@ -791,12 +928,28 @@
     width: 70%;
   }
 }
+@-webkit-keyframes load2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 82%;
+  }
+}
 @keyframes load2 {
   from {
     width: 0;
   }
   to {
     width: 82%;
+  }
+}
+@-webkit-keyframes load3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 98%;
   }
 }
 @keyframes load3 {
@@ -806,4 +959,6 @@
   to {
     width: 98%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
